@@ -1,0 +1,8 @@
+.git
+.gitignore
+.DS_Store # macOS specific
+__pycache__/
+*.pyc
+venv/ # Or whatever your virtual environment folder is named (e.g., .venv/)
+.vscode/ # VS Code configuration
+*.ipynb # Jupyter notebooks (if you have them in the root)

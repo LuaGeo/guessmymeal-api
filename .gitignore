@@ -1,0 +1,20 @@
+# Environnement virtuel Python
+venv/
+.env
+.env.*
+
+# Fichiers temporaires
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Modèle YOLO (optionnel, mais recommandé)
+*.pt
+
+# Docker
+*.tar
