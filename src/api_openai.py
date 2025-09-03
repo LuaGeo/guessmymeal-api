@@ -278,8 +278,9 @@ async def predict_llm(
 
         for it in parsed.get("items", []):
             label = it.get("label", "")
-            grams = it.get("portion", {}).get("grams", None)
-            ratio = it.get("portion", {}).get("ratio", None)
+            grams = it.get("grams", None)
+            ratio = it.get("ratio", None)
+            confidence = it.get("confidence", None)
 
             nut = find_nutrition_info(label)
             est = None
@@ -306,7 +307,7 @@ async def predict_llm(
 
             nutrition_per_item.append({
                 "label": label,
-                "confidence": it.get("confidence"),
+                "confidence": confidence,
                 "portion": {"ratio": ratio, "grams": grams},
                 "nutrition_100g": nut,
                 "nutrition_estimated": est
