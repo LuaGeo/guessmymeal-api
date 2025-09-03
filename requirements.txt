@@ -4,5 +4,5 @@ ultralytics==8.3.168
 pillow==11.3.0
 python-dotenv==1.0.0
 pymongo==4.6.3
-python-multipart==0.0.6
+python-multipart==0.0.18
 
