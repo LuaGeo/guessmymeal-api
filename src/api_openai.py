@@ -1,4 +1,5 @@
 # api_openai.py
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, APIRouter, File, UploadFile, HTTPException, Form
 from fastapi.responses import JSONResponse
 from PIL import Image
@@ -344,6 +345,14 @@ app = FastAPI(
     title="Food Detection API", 
     version="1.0.0",
     description="API de détection d'aliments avec OpenAI Vision"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Inclure le router
