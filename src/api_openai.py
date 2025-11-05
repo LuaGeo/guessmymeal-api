@@ -356,3 +356,7 @@ app.include_router(router, prefix="/api", tags=["food-detection"])
 @app.get("/")
 async def root():
     return {"message": "Food Detection API v2.1 with COMPLETE Nutrition (fiber, sugar, sodium)", "docs": "/docs"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

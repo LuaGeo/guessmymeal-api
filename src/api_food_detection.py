@@ -24,7 +24,7 @@ app = FastAPI(title="Food Detection API", version="1.0.0")
 
 # Globals
 model = None
-model_path = "models/food_detection_model.pt"
+model_path = "models/best.pt"
 
 @app.on_event("startup")
 async def load_model():

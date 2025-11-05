@@ -18,3 +18,8 @@ gnocchi
 croque_madame
 macarons
 caprese_salad
+filet_mignon
+omelette
+chicken_curry
+donuts
+nachos
