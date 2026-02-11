@@ -21,7 +21,7 @@ numpy==1.26.4
 opencv-python==4.11.0.86
 packaging==25.0
 pandas==2.3.1
-pillow==11.3.0
+pillow==12.1.1
 psutil==7.0.0
 py-cpuinfo==9.0.0
 pydantic==2.11.7
